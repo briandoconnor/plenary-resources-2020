@@ -80,7 +80,6 @@ task run_gwas {
 		File ids
 	}
 
-	Int disk_size = ceil(size(vcf, "GB") * 2 + 50)
 	String output_basename = basename(vcf, ".vcf.gz")
 
 	command {
@@ -122,7 +121,7 @@ task run_gwas {
 		docker: "dnastack/plink:1.9"
 		cpu: 4
 		memory: "16 GB"
-		disks: "local-disk " + disk_size + " HDD"
+		disks: "local-disk 350 HDD"
 		preemptible: 2
 	}
 }
