@@ -1,5 +1,5 @@
 # TAG dnastack/plink:1.9
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 
 MAINTAINER Heather Ward <heather@dnastack.com>
 

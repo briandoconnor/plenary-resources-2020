@@ -119,12 +119,9 @@ task create_plot {
 	String assoc_basename = basename(assoc_file, ".assoc.logistic")
 
 	command {
-		chromosome=$(head -2 ~{assoc_file} | tail -1 | cut -d ',' -f 1)
-
 		manhattan_plot.py \
 			-i ~{assoc_file} \
-			-o ~{assoc_basename}.png \
-			-c "$chromosome"
+			-o ~{assoc_basename}.png
 	}
 
 	output {
