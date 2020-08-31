@@ -65,7 +65,9 @@ task run_gwas {
 		File ids
 	}
 
-	String output_basename = basename(vcf, ".vcf.gz")
+	# Currently query params are not stripped off when files are localized, leading to some awkward file
+	# Names. The sub() is essentialyl stripping off any query params
+	String output_basename = basename(sub(vcf,"\\?.*",""), ".vcf.gz")
 
 	command {
 		plink \
