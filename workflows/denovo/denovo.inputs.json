@@ -1,0 +1,11 @@
+{
+  "CallDenovo.family_vcf": "File",
+  "CallDenovo.family_vcf_index": "File",
+  "CallDenovo.family_id": "String",
+  "CallDenovo.proband_id": "String",
+  "CallDenovo.father_id": "String",
+  "CallDenovo.mother_id": "String",
+  "CallDenovo.proband_sex": "String",
+  "CallDenovo.onekg_vcf": "File",
+  "CallDenovo.onekg_vcf_index": "File"
+}
