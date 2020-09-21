@@ -3,4 +3,4 @@ workflows:
    - subclass: WDL
      primaryDescriptorPath: /workflows/gwas.wdl
      testParameterFiles:
-     - /workflows/inputs.gwas.json
+     - /workflows/inputs.gwas.json 
