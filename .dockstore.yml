@@ -1,0 +1,6 @@
+version: 1.2
+workflows:
+   - subclass: WDL
+     primaryDescriptorPath: /workflows/gwas.wdl
+     testParameterFiles:
+     - /workflows/inputs.gwas.json
